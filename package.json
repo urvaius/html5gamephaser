@@ -1,0 +1,22 @@
+{
+  "name": "html5gamephaser",
+  "version": "1.0.0",
+  "description": "html5learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urvaius/html5gamephaser.git"
+  },
+  "author": "dave arneson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urvaius/html5gamephaser/issues"
+  },
+  "homepage": "https://github.com/urvaius/html5gamephaser#readme",
+  "dependencies": {
+    "phaser": "^3.1.2"
+  }
+}
