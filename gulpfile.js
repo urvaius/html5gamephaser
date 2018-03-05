@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     open = require('gulp-open');
 
 var config = {
-    port:8005,
+    port:6005,
     devBaseUrl: 'http://localhost',
     paths: {
         html: './src/*.html',
