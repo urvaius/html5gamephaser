@@ -16,7 +16,13 @@
     "url": "https://github.com/urvaius/html5gamephaser/issues"
   },
   "homepage": "https://github.com/urvaius/html5gamephaser#readme",
+  "devDependencies": {
+    "gulp-connect": "^5.5.0"
+  },
   "dependencies": {
-    "phaser": "^3.1.2"
+    "phaser": "^3.1.2",
+    "gulp": "^3.9.1",
+    "gulp-open": "^3.0.0"
+    
   }
 }
