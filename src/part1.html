@@ -29,10 +29,19 @@
 
     function preload ()
     {
+        this.load.image('sky', dist/images/sky.png);
+        this.load.image('ground', dist/images/platform.png);
+        this.load.image('ground', dist/images/star.png);
+        this.load.image('ground', dist/images/bomb.png);
+        this.load.spritesheet('dude', dist/images/dude.png,
+        {frameWidth: 32, frameHeight: 48}
+        );
     }
 
     function create ()
+    
     {
+        this.add.image(400, 300, 'sky');
     }
 
     function update ()
