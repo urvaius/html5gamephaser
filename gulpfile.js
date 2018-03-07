@@ -8,7 +8,8 @@ var config = {
     paths: {
         html: './src/*.html',
         js: './src/**/*.js',
-        dist: './dist'
+        dist: './dist',
+        images: './src/assets/*.png'
     }
 };
 gulp.task('connect', function() {
@@ -30,9 +31,15 @@ gulp.task('html', function() {
     .pipe(gulp.dest(config.paths.dist))
     .pipe(connect.reload());
 });
+gulp.task('images', function() {
+    gulp.src(config.paths.images)
+    .pipe(gulp.dest(config.paths.dist))
+    .pipe(connect.reload());
+});
 
 gulp.task('watch', function(){
     gulp.watch(config.paths.html, ['html']);
+    gulp.watch(config.paths.images,['png']);
     gulp.watch(config.paths.js, ['js', 'lint']);
 });
-gulp.task('default', ['html', 'open', 'watch']);
+gulp.task('default', ['html', 'open', 'watch', 'images']);
